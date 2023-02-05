@@ -1,0 +1,63 @@
+.carousel{
+   width: 610px;
+   transition: all 0.3s;
+   position: relative;
+}
+
+.carousel-card{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+/* .carousel-bottom{
+   display: flex;
+   width: 610px;
+   height: auto;
+   justify-content: center;
+   gap: 57px;
+   margin: 45px 0 20px 0;
+   transition: all 1s;
+   overflow: hidden;
+} */
+/* .off{
+   height: 0;
+   opacity: 0;
+   transition: all 1s;
+   margin: 0;
+} */
+/* .arrow{
+   width: 36px;
+   height: 16px;
+   position: relative;
+   left: 47%;
+   cursor: pointer;
+   transition: all 0.3s;
+} */
+/* .rotate{
+   transform: rotate(180deg);
+} */
+
+/* .arrow::after{
+   content: '';
+   width: 2px;
+   border-radius: 3px;
+   height: 25px;
+   position: absolute;
+   left: 0;
+   top: 0;
+   transform-origin: top;
+   background-color: #fff;
+   transform: rotate(315deg);
+}
+.arrow::before{
+   content: '';
+   width: 2px;
+   border-radius: 3px;
+   height: 25px;
+   position: absolute;
+   right: 0;
+   top: 0;
+   transform-origin: top;
+   background-color: #fff;
+   transform: rotate(45deg);
+} */

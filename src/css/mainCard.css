@@ -1,0 +1,38 @@
+.main-card{
+   width: 240px;
+   height: 260px;
+}
+p{
+   margin: 0;
+}
+.temp{
+   display: flex;
+}
+h1{
+   font-size: 130px;
+   margin: 0 10px 0 0;
+}
+.temp-deg{
+   font-size: 32px;
+   margin-top: 15px;
+}
+.data{
+   font-size: 26px;
+}
+.day-time{
+   font-size: 24px;
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   align-items: center;
+}
+.day-time::after{
+   content: '';
+   width: 1px;
+   height: 16px;
+   background-color: #fff;
+   position: absolute;
+   left: 50%;
+   top: 57%;
+   transform: translate(-50%, -50%);
+}

@@ -1,0 +1,32 @@
+.weather-details{
+   position: relative;
+   width: 450px;
+   font-size: 22px;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 50px;
+}
+.weather-details, .wind, .hum, .hum-svg, .rain-svg, .wind-svg{
+   display: flex;
+}
+.wind, .hum{
+   width: 150px;
+   justify-content: space-between;
+}
+.wind{
+   width: 185px;
+}
+.svg{
+   margin-right: 13px;
+}
+
+.weather-details::after{
+   content: '';
+   width: 1px;
+   background-color: #fff;
+   height: 19px;
+   position: absolute;
+   left: 55%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
