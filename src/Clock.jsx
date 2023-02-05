@@ -1,5 +1,5 @@
 // библиотека восхода-заката и т.д.
-// import suncalc from 'suncalc';
+
 
 import clockIcon from './static/img/clock.png';
 
