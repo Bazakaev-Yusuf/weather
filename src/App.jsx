@@ -10,6 +10,7 @@ import WindHumRain from "./WindHumRain";
 import WeatherCarousel from "./WeatherCarousel";
 import CityForm from "./CityForm";
 import Clock from "./Clock";
+import Loader from "./Loader";
 
 //импорты картинок на замену
 import cloudMoonR from './static/img/Cloud-Moon-Rain.png'
@@ -108,7 +109,7 @@ function App(){
          </div>
 
          {loading ? 
-            <h2>Loading...</h2>
+               <Loader/>
             :
             <div className="contain">
             <div className="main">

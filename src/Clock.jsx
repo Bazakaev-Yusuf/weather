@@ -1,5 +1,3 @@
-// библиотека восхода-заката и т.д.
-
 
 import clockIcon from './static/img/clock.png';
 
@@ -19,20 +17,15 @@ function Clock(){
       return new Date((ms + timezone) + new Date().getTimezoneOffset() * 60 * 1000);
    };
 
-   // библиотека для восхода / заката / золотого часа / и т.д.
-   // const times = suncalc.getTimes(new Date(), myCity.coord.lat, myCity.coord.lon);
-
-
-   // console.log('times - ', times);
-
    
 
    const sunrise = setTimezone(myCity.sunrise * 1000, myCity.timezone * 1000);
-   const sunset = setTimezone(myCity.sunset * 1000, myCity.timezone * 1000);
-   
-   // const sunset = new Date(myCity.sunset * 1000 + (new Date().getTimezoneOffset() * 60 * 1000));
+   // const sunset = setTimezone(myCity.sunset * 1000, myCity.timezone * 1000);
 
-   const options2 = { hour: 'numeric', minute: 'numeric'}
+   const sunset = new Date(((myCity.sunset + myCity.timezone) * 1000) + new Date().getTimezoneOffset() * 60 * 1000);
+   
+
+   const options2 = { hour: 'numeric', minute: 'numeric'};
    
    const formatDate2 = new Intl.DateTimeFormat('en-US', options2);
 
@@ -57,7 +50,7 @@ function Clock(){
                   <img src={clockIcon} alt="" />
                </div>
                <p className="first-time">{timeSunrise.substring(0, timeSunrise.length - 2)}</p>
-               <p className="second-time">11:45</p>
+               <p className="second-time">AM</p>
             </div>
          </div>
          <div className="clock-middle">
@@ -66,8 +59,8 @@ function Clock(){
                <div className="clock-draw">
                   <img src={clockIcon} alt="" />
                </div>
-               <p className="first-time-mid">{midTime.substring(0, midTime.length - 2)}<span className='mid-span'> AM</span></p>
-               <p className="second-time-mid">6:49 <span className='mid-span'>PM</span></p>
+               <p className="first-time-mid">12:30</p>
+               <p className='mid-span'>AM</p>
             </div>
          </div>
          <div className="clock-side">
@@ -77,7 +70,7 @@ function Clock(){
                   <img src={clockIcon} alt="" />
                </div>
                <p className="first-time">{timeSunset.substring(0, timeSunset.length - 2)}</p>
-               <p className="second-time">7:24</p>
+               <p className="second-time">PM</p>
             </div>
          </div>
       </div>

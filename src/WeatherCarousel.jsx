@@ -28,7 +28,7 @@ function WeatherCarousel({icon}){
                if(idx < 4){
                   return(
                      <WeatherCard
-                        key={item.id}
+                        key={idx + 10}
                         icon={icon}
                         arr={item}
                      />

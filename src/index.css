@@ -104,4 +104,67 @@ body{
 }
 
 
+.loader {
+  position: relative;
+  width: 210px;
+  margin: auto;
+  margin-top: 100px;
+  height: 60px;
+  background: #fff;
+  border-radius: 100px;
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 100px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 40px 0 0 20px #fff;
+}
+
+.snow {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  z-index: 1;
+}
+
+.snow > span {
+  position: relative;
+  width: 20px;
+  height: 5px;
+  background: #ffffff;
+  margin: 20px 2px;
+  border-radius: 50%;
+  animation: snowing 1s linear infinite;
+  transform-origin: bottom;
+}
+
+@keyframes snowing {
+  0% {
+    transform: translateY(0px);
+  }
+  30%{
+    transform: translateY(60px) translateX(5px) ;
+  }
+  50%{
+    transform: translateY(120px) translateX(0px) scale(1.5);
+  }
+  70% {
+    transform: translateY(180px) translateX(3px) scale(1);
+  }
+
+  100% {
+    transform: translateY(200px) translateX(-2px) scale(0.5);
+  }
+}
+
+
+
+
 
