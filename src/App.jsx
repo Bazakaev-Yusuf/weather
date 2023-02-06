@@ -104,7 +104,7 @@ function App(){
          
          {/* типа модальное окно при ошибке ввода города */}
          <div className={er ? 'error error_true' : 'error'}>
-            <p className="error-txt">Ведите корректное название города</p>
+            <p className="error-txt">Ведите корректное название города<br/> <span className="error-txt__subtitle">(Точнее ищет на Английском)</span></p>
             <button className={er ? 'error-btn' : 'error-btn error-btn2'} onClick={erChange}>X</button>
          </div>
 
