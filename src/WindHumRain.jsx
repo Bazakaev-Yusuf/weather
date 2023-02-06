@@ -41,10 +41,10 @@ function WindHumRain() {
                   </defs>
                </svg>
                </div>
-               <p>Wind</p>
+               <p>Ветер</p>
             </div>
             
-            <p>{windKM.toFixed(1)} km/h</p>
+            <p>{windKM.toFixed(1)} Км/Ч</p>
          </div>
          <div className="hum">
             <div className="hum-svg">
@@ -75,7 +75,7 @@ function WindHumRain() {
             </defs>
             </svg>
             </div>
-            <p>Hum</p>
+            <p>Влажность</p>
             </div>
             <p>{hum} %</p>
          </div>

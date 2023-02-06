@@ -11,7 +11,7 @@ function WeatherCard({icon, arr}) {
    // вывод недели
    const dateNew = new Date(arr.dt_txt);
    let options = { weekday: 'short'};
-   let formatDate = new Intl.DateTimeFormat('en-US', options);
+   let formatDate = new Intl.DateTimeFormat('ru-RU', options);
    let dayIs = formatDate.format(dateNew);
    
 
@@ -26,7 +26,7 @@ function WeatherCard({icon, arr}) {
          <div className="weather-img">
             <img src={icon(arr.weather[0].icon)} alt="weather_icon" className='weather-img__icon' />
          </div>
-         <p className="weather-text week">
+         <p className="weather-week">
             {dayIs}
          </p>
       </div>

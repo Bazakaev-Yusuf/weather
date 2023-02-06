@@ -14,22 +14,22 @@ function MainCardWeather() {
     // для вывода дня недели
     const date = new Date();
     let options = { weekday: 'long'};
-    let formatDate = new Intl.DateTimeFormat('en-US', options);
+    let formatDate = new Intl.DateTimeFormat('ru-RU', options);
     let weekDay = formatDate.format(date);
 
    // для вывода времени (час/ мин)
    let options2 = { hour: 'numeric', minute: 'numeric' }
-   let formatDate2 = new Intl.DateTimeFormat('en-US', options2);
+   let formatDate2 = new Intl.DateTimeFormat('ru-RU', options2);
    let time = formatDate2.format(date);
 
    // для вывода месяца и года
-      let options3 = {month: 'short', year: '2-digit'}
-      let formatDate3 = Intl.DateTimeFormat('en-US', options3);
+      let options3 = {month: 'long', year: 'numeric'}
+      let formatDate3 = Intl.DateTimeFormat('ru-RU', options3);
       let monthYear = formatDate3.format(date)
    
    // для вывода дня
     let options4 = {day: 'numeric',}
-    let formatDate4 = Intl.DateTimeFormat('en-US', options4);
+    let formatDate4 = Intl.DateTimeFormat('ru-RU', options4);
     let day = formatDate4.format(date);
    
    
@@ -43,7 +43,7 @@ function MainCardWeather() {
             {deg ? <p className='temp-deg'>&deg; F</p> : <p className='temp-deg'>&deg; C</p>}
          </div>
          <p className="data">
-            {day}th {monthYear}
+            {day} {monthYear}
          </p>
          <div className="day-time">
             <p>{weekDay}</p>

@@ -1,5 +1,5 @@
 .carousel{
-   width: 610px;
+   width: 425px;
    transition: all 0.3s;
    position: relative;
 }
@@ -7,7 +7,7 @@
 .carousel-card{
    display: flex;
    justify-content: space-between;
-   margin-bottom: 20px;
+   margin-bottom: 15px;
 }
 /* .carousel-bottom{
    display: flex;

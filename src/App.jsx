@@ -111,7 +111,7 @@ function App(){
          {loading ? 
                <Loader/>
             :
-            <div className="contain">
+            <div className="container">
             <div className="main">
                <div className="main-head">
                   <img src={icon(arr2[0]?.weather[0].icon)} alt="moon" className="moon" />

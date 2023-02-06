@@ -7,7 +7,7 @@ function Progress(){
       <div className='progress-block'>
          <div className="block">
             <p className='title'>
-               Air Quality
+               Воздух
             </p>
             <div className="progress-bar">
                <img src={progress1} alt="" />
@@ -15,7 +15,7 @@ function Progress(){
          </div>
          <div className="block">
             <p className='title'>
-               UV Index
+               Индекс - UV
             </p>
             <div className="progress-bar">
                <img src={progress2} alt="" />

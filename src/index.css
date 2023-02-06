@@ -6,17 +6,26 @@
   list-style: none;
   color: #fff;
 }
-.contain{
-  display: flex;
-  width: 1450px;
-  margin: auto;
-  
-}
+
 body{
+  background-color: floralwhite;
+}
+
+.container{
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  /* margin: auto; */
   background: rgb(72,53,91);
   background: linear-gradient(90deg, rgba(72,53,91,1) 0%, rgba(145,190,243,1) 100%);
-  /* height: 100vh; */
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 139, 0.49) 0 0 5px, rgba(0, 0, 139, 0.49) 1px 1px 5px, rgba(0, 0, 139, 0.496) -1px -1px 5px;
 }
+
 .main{
   padding: 20px 40px;
   width: 865px;
@@ -28,12 +37,12 @@ body{
   margin-bottom: 10px;
 }
 .moon{
-  max-width: 120px;
+  max-width: 84px;
   height: auto;
 }
 .a-side{
-  width: 575px;
-  padding: 20px 20px 0 40px;
+  width: 402px;
+  padding: 30px 30px 0 30px;
   box-sizing: border-box;
   box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(21px);
